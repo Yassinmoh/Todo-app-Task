@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+body {
+	background: #fff;
+	color: #333;
+	font-family: Lato, sans-serif;
+	background-color: #e4e4e4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	display: block;
+	width: 400px;
+	margin: 10px auto 100px;
+	background-color: #fff;
+	padding: 0px 10px 10px 10px;
+	border-radius: 10px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+	margin: 0;
+	padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+li * {
+	float: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li,
+h3 {
+	clear: both;
+	list-style: none;
+}
+
+input,
+button {
+	outline: none;
+}
+
+button {
+	background: none;
+	border: 0px;
+	color: #888;
+	font-size: 15px;
+	width: 60px;
+	margin: 10px 0 0;
+	font-family: Lato, sans-serif;
+	cursor: pointer;
+}
+
+
+.add-item-btn {
+	color: #333;
+	font-weight: 700;
+	font-size: 15px;
+	border-bottom: 2px solid #333;
+	padding: 20px 0 10px;
+	margin: 0;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+input[type="text"] {
+	width: 75%;
+	margin: 15px 0;
+	font-size: 18px;
+	line-height: 18px;
+	height: 18px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-radius: 6px;
+	font-family: Lato, sans-serif;
+	color: #888;
+}
+
+input[type="text"]:focus {
+	color: #333;
+}
+
+.todo-list-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: rgba(136, 136, 136, 0.349) 1px solid;
+	padding-bottom: 8px;
+}
+
+.actions-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+.button-add:hover {
+	color: green;
+}
+
+.edit:hover {
+	color: black;
+}
+
+.delete:hover {
+	color: red;
 }
